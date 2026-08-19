@@ -333,23 +333,6 @@ export default function App() {
                   Not enough respondents from this country to show a distribution.
                 </Text>
               )}
-
-              {context?.region && (
-                <Box borderWidth="1px" borderRadius="md" p={4}>
-                  <HStack justify="space-between" mb={2}>
-                    <Heading size="sm">Model reliability in {context.region.name}</Heading>
-                    <Badge colorPalette={context.region.reliable ? 'green' : 'orange'}>
-                      {context.region.reliable ? 'reliable' : 'thin sample'}
-                    </Badge>
-                  </HStack>
-                  <Text fontSize="sm" color="fg.muted">
-                    On the held-out test set, {context.region.n} respondents from {context.region.name}{' '}
-                    had a median actual salary of {fmtUsd(context.region.median_actual_usd)} vs. a median
-                    predicted salary of {fmtUsd(context.region.median_pred_usd)} — a typical error of{' '}
-                    <b>{context.region.mdape_pct}%</b>. Treat this prediction's precision accordingly.
-                  </Text>
-                </Box>
-              )}
             </VStack>
           </Tabs.Content>
         </Tabs.Root>
