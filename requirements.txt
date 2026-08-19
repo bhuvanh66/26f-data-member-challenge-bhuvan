@@ -4,3 +4,6 @@ numpy
 scikit-learn
 matplotlib
 jupyter
+ml
+fastapi
+uvicorn[standard]

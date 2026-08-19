@@ -102,3 +102,28 @@ interview we'll ask about:
 professional developers who answered the compensation question in the **Stack
 Overflow Annual Developer Survey 2025**, published by Stack Exchange under the
 [Open Database License](https://opendatacommons.org/licenses/odbl/1-0/).
+
+---
+
+## Running the app
+
+Train the model (writes `ml/model.joblib`):
+
+```bash
+.venv/bin/python -m ml.pipeline.train
+```
+
+Start the backend:
+
+```bash
+.venv/bin/uvicorn ml.backend.api:app --port 8000
+```
+
+Start the frontend (separate terminal):
+
+```bash
+cd frontend && npm install && npm run dev
+```
+
+Open http://localhost:5173. Restart the backend any time `ml/model.joblib` is
+regenerated — it loads the model once at startup, not per request.

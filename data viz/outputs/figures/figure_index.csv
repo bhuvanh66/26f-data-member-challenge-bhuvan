@@ -1,0 +1,13 @@
+file,caption
+fig01_missingness.png,"Missingness per column, and the missingness matrix showing that the NA block is structural."
+fig02_missingness_by_employment.png,"Missingness crossed with Employment. The pattern is skip logic, so NA means 'not applicable'."
+fig03_target_distribution.png,"The target before and after cleaning, raw and log-transformed."
+fig04_salary_by_country.png,"Salary by country (top 14 by sample size), log axis."
+fig05_salary_by_categorical.png,"Salary against each categorical predictor, with sample size on every level."
+fig06_salary_by_role.png,"Salary by role, thin roles grouped."
+fig07_numeric_vs_salary.png,"Salary against age, years coding and work experience, with binned-median trend."
+fig08_correlation.png,Correlation matrix for the numeric predictors and the target.
+fig09_interactions.png,"Two interaction checks, thin cells greyed out rather than coloured."
+fig10_multiselect_frequency.png,Most common languages and databases.
+fig11_salary_by_language.png,Salary for users vs non-users of the 14 most common languages.
+fig12_language_breadth.png,Distribution of language breadth and its (weak) link to salary.
